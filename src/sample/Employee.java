@@ -14,6 +14,7 @@ public class Employee implements Worker
         return this.firstName + " " + this.lastName;
     }
 
+
     @Override
     public void hire()
     {
@@ -25,4 +26,35 @@ public class Employee implements Worker
     {
         isActive = false;
     }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
+    }
+
+    public void setName(String firstName)
+    {
+        this.firstName = firstName;
+    }
+
 }
